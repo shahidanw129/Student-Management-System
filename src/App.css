@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+}
+
+.navbar {
+  background: #2d2a7a;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #6a5af9;
+}
+
+.container {
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #2d2a7a;
+  font-weight: 600;
+}
+
+.card p {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card-grid .card {
+  flex: 1;
+  min-width: 220px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-grid .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #6a5af9;
+}
+
+button {
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #6a5af9, #8e6dfd);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #8e6dfd, #6a5af9);
+}
+
+.container h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2d2a7a;
+  margin-bottom: 15px;
+}
+
+.container p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #6a5af9, #8e6dfd);
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.recent-students-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.student-card {
+  background: #f4f4ff;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 200px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+.student-card h3 {
+  color: #2d2a7a;
+}
+
+.status {
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.status.active { background: #28a745; }
+.status.pending { background: #ffc107; }
+.status.inactive { background: #dc3545; }
+
+.student-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.student-grid .student-card {
+  background: #fff;
+}
+
+.contact-section {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.contact-section:hover {
+  transform: translateY(-5px);
+}
+
+.email-section { background: #e0f2fe; }
+.phone-section { background: #fee2e2; }
+.address-section { background: #fef3c7; }
+.hours-section { background: #fef9c3; }
+.social-section { background: #ede9fe; }
+.support-section { background: #d1fae5; }
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: slideLeft 1s ease;
+}
+
+.login-left h1 {
+  font-size: 45px;
+}
+
+.login-right {
+  flex: 1;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.login-card button {
+  width: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Full screen center */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Glassmorphism card */
+.login-form {
+  width: 350px;
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Heading */
+.login-form h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Inputs */
+.login-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+.login-form input:focus {
+  box-shadow: 0 0 5px #fff;
+  transform: scale(1.03);
+}
+
+/* Button */
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00c9ff;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.login-form button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
